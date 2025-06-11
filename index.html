@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ridho Faturahman - Resume</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      --text-color: #ffffff;
+      --accent-color: #00d2ff;
+      --glass-bg: rgba(0, 210, 255, 0.08);
+      --border-glass: rgba(0, 210, 255, 0.2);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(0, 210, 255, 0.15);
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 5rem 10% 1rem;
+    }
+
+    .content-box {
+      background: var(--glass-bg);
+      border: 1px solid var(--border-glass);
+      padding: 1.5rem;
+      border-radius: 10px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.2rem;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    img.profile {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent-color);
+      margin-bottom: 1rem;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img.profile:hover {
+      transform: scale(2);
+    }
+
+    .work-entry {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .job-description {
+      flex: 1;
+    }
+
+    .image-box {
+      flex: 0 0 120px;
+      background: var(--glass-bg);
+      border: 1px solid var(--border-glass);
+      border-radius: 8px;
+      padding: 0.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img.job-photo {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img.job-photo:hover {
+      transform: scale(1.5);
+      z-index: 100;
+    }
+
+    h1, h2, h3 {
+      margin: 0.5rem 0;
+    }
+
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.3rem; }
+
+    p, a {
+      color: var(--text-color);
+      font-size: 1rem;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent-color);
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #00a6cc;
+    }
+
+    .org-images {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .org-images img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .org-images img:hover {
+      transform: scale(1.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0 1rem;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#education">Education</a>
+    <a href="#work">Work</a>
+    <a href="#organization">Organization</a>
+    <a href="#certificates">Certificates</a>
+  </nav>
+
+  <section id="profile" class="center" data-aos="fade-up">
+    <div class="content-box">
+      <h2>Profile</h2>
+      <img src="your-photo.jpg" alt="Profile Photo" class="profile"/>
+      <h1>Ridho Faturahman</h1>
+      <p>CIMAHI | 081322203840 | <a href="mailto:Rido.faturahman@gmail.com">Rido.faturahman@gmail.com</a></p>
+      <p>
+        <a href="https://www.linkedin.com/in/ridho-faturahman-598b57199" target="_blank">LinkedIn</a> |
+        <a href="https://www.instagram.com/ridofaturahman/" target="_blank">Instagram</a>
+      </p>
+      <a class="download-btn" href="Ridho_Faturahman_Resume.pdf" download>Download PDF Resume</a>
+      <p>I have experience to socialize well and be responsible with my work...</p>
+    </div>
+  </section>
+
+<section id="education" data-aos="fade-up">
+  <div class="content-box left">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Engineering, Civil Engineering</strong> – Universitas Jenderal Achmad Yani</p>
+    <p>
+      Expertise in highway and mining road design, GIS mapping, hydrology, and structural engineering.
+    </p>
+    <p>
+      Course related: I am a Civil Engineer with a strong focus on the planning and design of highways and mining roads. My expertise includes the use of advanced road design and GIS-based mapping software such as AutoCAD Civil 3D, ArcGIS, and other related tools to develop accurate and efficient infrastructure plans. I have hands-on experience in topographic data processing, alignment design, volume calculation, and terrain modeling for road construction projects.
+    </p>
+    <p>
+      In addition to my specialization in transportation engineering, I also have a solid background in structural design of buildings, covering both analysis and detailing in accordance with relevant codes and standards. Furthermore, I have developed a strong interest and capability in hydrology and hydraulics engineering, which allows me to contribute to water-related infrastructure planning, such as drainage systems, flood control, and watershed management.
+    </p>
+    <p>
+      With this multidisciplinary foundation, I am able to approach civil engineering projects with a comprehensive perspective, ensuring technical accuracy, safety, and sustainability.
+    </p>
+  </div>
+</section>
+
+
+ <section id="work" data-aos="fade-up">
+  <div class="content-box left">
+    <h2>Work Experience</h2>
+
+    <!-- GEOINDO -->
+    <div class="content-box" data-aos="fade-up">
+      <div class="work-entry">
+        <div class="job-description">
+          <h3>PT. GEOINDO GIRI JAYA</h3>
+          <p><strong>Drafter</strong> (May 2019 - May 2020)</p>
+          <ul>
+            <li>Prepared Bill of Quantities (BoQ) for road construction activities including earthworks, subgrade, pavement, and drainage structures.</li>
+            <li>Conducted quantity take-offs from engineering drawings and site measurements for accurate cost estimation and budgeting.</li>
+            <li>Assisted in cost control and monitoring, ensuring expenditures aligned with project budgets.</li>
+            <li>Supported procurement planning by providing material quantity forecasts and usage tracking.</li>
+            <li>Collaborated with engineers and site supervisors to verify actual work quantities and support progress claims.</li>
+            <li>Participated in the preparation of monthly reports and documentation for project management and client review.</li>
+            <li>Ensured compliance with company standards and project specifications in all cost-related processes.</li>
+          </ul>
+        </div>
+        <div class="image-box">
+          <img src="geo1.jpg" class="job-photo"/>
+          <img src="geo2.jpg" class="job-photo"/>
+          <img src="geo3.jpg" class="job-photo"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAPI ITB -->
+    <div class="content-box" data-aos="fade-up">
+      <div class="work-entry">
+        <div class="job-description">
+          <h3>PT. LAPI ITB</h3>
+          <p><strong>Pavement & Hydrology Engineer at Semarang Demak Toll Road Project</strong> (Aug 2020 - Mar 2021)</p>
+          <ul>
+            <li>Assisted in the design and analysis of drainage systems, including culverts, roadside ditches, and stormwater infrastructure.</li>
+            <li>Conducted hydrological and hydraulic calculations to support effective water flow management and flood mitigation.</li>
+            <li>Supported the design of flexible pavement structures, including layer thickness design based on traffic loads and subgrade conditions.</li>
+            <li>Prepared technical drawings, cross-sections, and reports using relevant engineering software and tools.</li>
+            <li>Participated in site inspections and data collection to verify field conditions and support design accuracy.</li>
+            <li>Coordinated with multidisciplinary teams including structural, geotechnical, and construction engineers to ensure integration and feasibility of designs.</li>
+            <li>Ensured compliance with national design standards and environmental requirements throughout the planning and design process.</li>
+          </ul>
+        </div>
+        <div class="image-box">
+          <img src="lapi1.jpg" class="job-photo"/>
+          <img src="lapi2.jpg" class="job-photo"/>
+          <img src="lapi3.jpg" class="job-photo"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- UPTD -->
+    <div class="content-box" data-aos="fade-up">
+      <div class="work-entry">
+        <div class="job-description">
+          <h3>UPTD I Pengelolaan Jalan dan Jembatan</h3>
+          <p><strong>Senior Drafter</strong> (May 2021 – Dec 2022)</p>
+          <ul>
+            <li>Prepared detailed technical drawings and construction plans for various road and bridge maintenance and development projects under the regional Bina Marga office.</li>
+            <li>Interpreted design data, survey results, and engineering inputs into accurate 2D and 3D drawings using AutoCAD and other drafting tools.</li>
+            <li>Collaborated with engineers and field teams to update and revise drawings based on field conditions and design changes.</li>
+            <li>Ensured all drawings complied with Indonesian public works standards and project-specific technical specifications.</li>
+            <li>Managed documentation, drawing archives, and coordinated drawing submissions for project approvals and tender processes.</li>
+            <li>Supported quantity estimation and material take-offs based on finalized drawings.</li>
+          </ul>
+        </div>
+        <div class="image-box">
+          <img src="uptd1.jpg" class="job-photo"/>
+          <img src="uptd2.jpg" class="job-photo"/>
+          <img src="uptd3.jpg" class="job-photo"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUMA -->
+    <div class="content-box" data-aos="fade-up">
+      <div class="work-entry">
+        <div class="job-description">
+          <h3>PT BUKIT MAKMUR MANDIRI UTAMA (BUMA)</h3>
+          <p><strong>Project Engineer</strong> (Jan 2023 - Apr 2025)</p>
+          <ul>
+            <li>Oversaw the upgrading of a 39-kilometer hauling road, ensuring design compliance and construction quality in line with heavy-duty mining operations.</li>
+            <li>Coordinated daily project execution, including earthworks, drainage improvements, and pavement layer installation.</li>
+            <li>Assisted in planning and scheduling project.</li>
+            <li>Worked closely with surveyors and drafters to verify alignments, cross-sections, and quantity take-offs.</li>
+            <li>Monitored contractor performance, conducted quality control checks, and ensured adherence to safety standards and operational deadlines.</li>
+            <li>Collaborated with mining and operations teams to minimize haulage disruption during construction activities.</li>
+            <li>Reported project progress, risks, and milestones to project managers and upper management.</li>
+          </ul>
+        </div>
+        <div class="image-box">
+          <img src="buma1.jpg" class="job-photo"/>
+          <img src="buma2.jpg" class="job-photo"/>
+          <img src="buma3.jpg" class="job-photo"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="organization" data-aos="fade-up">
+    <div class="content-box center">
+      <h2>Organization</h2>
+
+      <div class="content-box" data-aos="fade-up">
+        <h3>RAKAPALA</h3>
+	<h2>Member President JAN 2014 - FEB 2017</h2>
+        <p>Environmental activities, conservation, and education initiatives.</p>
+	<p>RAKAPALA (Remaja Karang Taruna Pecinta Alam) is a youth nature-loving community that focuses on mountain climbing and rock climbing exploration. The organization is dedicated to developing skills and experiences in outdoor adventure, particularly in mountaineering and cliff climbing activities.
+
+Beyond adventure, RAKAPALA is also actively involved in various social initiatives and community service programs, reflecting its commitment to both nature and society. The group fosters teamwork, discipline, environmental awareness, and social responsibility among its members through regular training, expeditions, and outreach activities.</p>
+        <div class="org-images">
+          <img src="rakapala1.jpg" />
+          <img src="rakapala2.jpg" />
+          <img src="rakapala3.jpg" />
+        </div>
+      </div>
+
+      <div class="content-box" data-aos="fade-up">
+        <h3>BADAK’S 29</h3>
+        <p>Badaks 29 (Barudak Dapur Kreasi Seni) is a creative youth community formed to promote and preserve Sundanese art and culture. The group is passionate about various forms of traditional arts, including music, dance, and performance, aiming to keep local heritage alive through creative expression.
+
+In addition to its cultural mission, Badaks 29 is also actively involved in social activities, contributing to community welfare and youth empowerment. The community serves as both an artistic platform and a social movement, encouraging collaboration, creativity, and cultural pride among its members.</p>
+        <div class="org-images">
+          <img src="badaks1.jpg" />
+          <img src="badaks2.jpg" />
+          <img src="badaks3.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" data-aos="fade-up">
+    <div class="content-box left">
+      <h2>Certificates</h2>
+      <ul>
+        <li>Pengawas Operasional Pertama (POP) – valid until 14 April 2028</li>
+        <li>Surat Keterangan Keterampilan kelas 1 Autocad Civil 3D</li>
+        <li>Pelatihan Tenaga Ahli Konstruksi, BINA MARGA (29–30 Maret 2022)</li>
+        <li>Peran K3 dimasa Pandemik (26 Juli 2020 – PT. WINA KARYA MULIA)</li>
+        <li>Seminar Teknik Sumber Daya Air (2016 & 2017) – SDA Kota Bandung</li>
+      </ul>
+    </div>
+  </section>
+<section id="additional" data-aos="fade-up">
+  <div class="content-box left">
+    <h2>Additional</h2>
+    <ul>
+      <li>🎯 <strong>Technical Skills:</strong> AutoCAD Civil 3D, ArcGIS, SAP2000, ETABS, Microsoft Project, Microsoft Office.</li>
+      <li>🤝 <strong>Soft Skills:</strong> Leadership, Teamwork, Critical Thinking, Safety Awareness.</li>
+      <li>🌍 <strong>Languages:</strong> English (Proficient).</li>
+      <li>🎵 <strong>Hobbies:</strong> I enjoy music, movies, exploring, and discovering new environments.</li>
+    </ul>
+  </div>
+</section>
+  <footer>
+    &copy; RIDHO FATURAHMAN
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false
+    });
+  </script>
+</body>
+</html>
